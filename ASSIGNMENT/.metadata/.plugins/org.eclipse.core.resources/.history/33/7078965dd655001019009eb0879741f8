@@ -1,0 +1,18 @@
+package com.EvenOdd;
+
+import jdk.internal.org.jline.terminal.TerminalBuilder.SystemOutput;
+
+public class EvenOdd {
+
+	public static void main(String[] args) {
+		
+		int num=10;
+		
+		if(num%2==0) {
+			System.out.println("Even");
+		}else {
+			System.out.println("Odd");
+		}
+
+
+}
