@@ -29,6 +29,7 @@ public class ConstructorDemo {
 		String name = sc.nextLine();
 		
 		ConstructorDemo obj1= new ConstructorDemo();
+		
 		obj1.setName(name);
 		
 		ConstructorDemo obj2 = new ConstructorDemo(obj1.getName());
