@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Music Player</title>
+	<link rel="stylesheet" href="style.css" />
+	<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+	/>
+</head>
+<body>
+	<div class="container">
+		<!-- Search -->
+		<div class="search-bar">
+			<input type="text" id="search" placeholder="Search songs..." />
+		</div>
+
+		<div class="music-player">
+			<nav>
+				<div class="circle">
+					<i class="fa-regular fa-heart"></i>
+				</div>
+				<div class="title"><h4>Now Playing</h4></div>
+				<div class="circle" id="toggle-favorites">
+					<i class="fa-solid fa-star"></i>
+				</div>
+			</nav>
+
+			<img src="assets/images/1.jpg" alt="song image" class="song-img" />
+			<h1>Song Title</h1>
+			<p>Artist</p>
+
+			<audio id="song"></audio>
+
+            <input type="range" id="progress" value="0" />
+
+			<!-- Time & Volume -->
+			<div class="time-volume">
+				<div class="time">
+					<span id="current-time">0:00</span> / 
+					<span id="duration">0:00</span>
+				</div>
+				<div class="volume-control">
+					<i class="fa-solid fa-volume-high"></i>
+					<input type="range" id="volume" min="0" max="1" step="0.01" value="1" />
+				</div>
+			</div>
+
+			<div class="controls">
+				<div><i class="fa-solid fa-backward"></i></div>
+				<div id="play-pause"><i class="fa-solid fa-play" id="action"></i></div>
+				<div><i class="fa-solid fa-forward"></i></div>
+			</div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
