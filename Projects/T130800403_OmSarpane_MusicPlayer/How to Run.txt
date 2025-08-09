@@ -1,0 +1,1 @@
+Open project in vs code and then run index.html using live server extension
